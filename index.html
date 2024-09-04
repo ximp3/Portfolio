@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Sara Leão - Portfolio</title>
+		<link
+			rel="stylesheet"
+			href="styles.css"
+		/>
+	</head>
+	<body>
+		<div class="background-svg"></div>
+		<header>
+			<a
+				href="#"
+				class="logo"
+				>Sara.</a
+			>
+			<button
+				class="hamburger"
+				onclick="toggleMenu()"
+			>
+				☰
+			</button>
+			<ul class="navlist">
+				<li>
+					<a
+						href="#"
+						class="first"
+						>Projetos</a
+					>
+				</li>
+				<li><a href="#">Experiência</a></li>
+				<li><a href="#">Sobre Mim</a></li>
+				<li><a href="#">Contactos</a></li>
+			</ul>
+		</header>
+
+		<section class="emoji">
+			<div class="me-emoji">
+				<img
+					src="profile.png"
+					alt=""
+				/>
+			</div>
+		</section>
+		<section class="me">
+			<div class="me-title">
+				<h1>Sara Leão.</h1>
+				<h3>
+					<span class="grey">I do Code &</span
+					><span class="color">&nbspChill</span>
+				</h3>
+			</div>
+			<div class="me-text">
+				<p>
+					Estudante de programação com foco em HTML, CSS, JavaScript e
+					React.js, apaixonada por criar interfaces web intuitivas e
+					responsivas. Sempre em busca de novos desafios e
+					oportunidades para aplicar soluções criativas.
+				</p>
+			</div>
+			<div class="btn">
+				<button>Contacta-me</button>
+			</div>
+		</section>
+
+		<script>
+			function toggleMenu() {
+				const navList = document.querySelector('.navlist');
+				navList.classList.toggle('active');
+			}
+		</script>
+	</body>
+</html>
